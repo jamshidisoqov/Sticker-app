@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_extra_large">24dp</dimen>
+    <dimen name="margin_standart">8dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_extra_small">2dp</dimen>
+    <dimen name="margin_component">12dp</dimen>
+    <dimen name="clickableImageSize">40dp</dimen>
+    <dimen name="imageSize">24dp</dimen>
+    <dimen name="actionBarSize">56dp</dimen>
+    <dimen name="buttonSize">48dp</dimen>
+</resources>

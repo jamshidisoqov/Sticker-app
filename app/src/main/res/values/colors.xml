@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Primary -->
+    <color name="contrastTextPrimary">#FFFFFFFF</color>
+    <color name="mainPrimary">#FF007DFF</color>
+    <color name="lightPrimary">#FF3397FF</color>
+    <color name="darkPrimary">#FF0057B2</color>
+    <color name="backgroundPrimary">#14007DFF</color>
+    <color name="borderPrimary">#80007DFF</color>
+    <!-- Secondary -->
+    <color name="contrastTextSecondary">#FFFFFFFF</color>
+    <color name="mainSecondary">#FFFF505F</color>
+    <color name="lightSecondary">#FFFF737F</color>
+    <color name="darkSecondary">#FFB23842</color>
+    <color name="backgroundSecondary">#14FF505F</color>
+    <color name="borderSecondary">#80FF505F</color>
+    <!-- Text -->
+    <color name="textPrimary">#DE000000</color>
+    <color name="textSecondary">#8A000000</color>
+    <color name="textDisabled">#61000000</color>
+    <color name="textHint">#61000000</color>
+    <!-- Action -->
+    <color name="mainAction">#FFE0E0E0</color>
+    <color name="backgroundAction">#14000000</color>
+    <color name="disabledAction">#14000000</color>
+    <color name="focusAction">#1F000000</color>
+    <!-- Other -->
+    <color name="stroke">#3B000000</color>
+    <color name="toolBarText">#8AFFFFFF</color>
+    <color name="backdrop">#80000000</color>
+    <color name="divider">#1F000000</color>
+    <color name="activeRating">#FFB400</color>
+    <color name="snackBar">323232</color>
+</resources>
