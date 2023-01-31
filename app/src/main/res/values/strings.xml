@@ -1,4 +1,26 @@
 <resources>
-    <string name="app_name">Sticker app</string>
+    <string name="app_name">GDRAW</string>
     <string name="app_actor">Powered by Jamshid Isoqov</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get started</string>
+    <string name="recent_files">Recent files</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="draw">Draw</string>
+    <string-array name="intro_array">
+        <item>Tap the icons to edit photos or draw something on a canvas</item>
+        <item>Select tools and start drawing </item>
+        <item>Save and share</item>
+    </string-array>
+    <string name="try_check">Try check</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="crop">Crop</string>
+    <string name="line">Line</string>
+    <string name="text">Text</string>
+    <string name="pencil">Pencil</string>
+    <string name="eraser">Eraser</string>
+    <string name="arrow">Arrow</string>
+    <string name="circle">Circle</string>
+    <string name="square">Square</string>
+    <string name="icons">Icons</string>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_icon"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:layout_marginVertical="@dimen/margin_small"
+    android:src="@drawable/ic_arrow" />

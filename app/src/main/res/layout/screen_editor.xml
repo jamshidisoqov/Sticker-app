@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/action_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/margin_standart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_back"
+            android:layout_width="@dimen/clickableImageSize"
+            android:layout_height="@dimen/clickableImageSize"
+            android:padding="@dimen/margin_standart"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_save"
+            android:layout_width="@dimen/clickableImageSize"
+            android:layout_height="@dimen/clickableImageSize"
+            android:padding="@dimen/margin_standart"
+            android:src="@drawable/ic_save"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_share"
+            android:layout_width="@dimen/clickableImageSize"
+            android:layout_height="@dimen/clickableImageSize"
+            android:padding="@dimen/margin_standart"
+            android:src="@drawable/ic_share"
+            app:tint="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+        android:id="@+id/editor_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editor_container"
+        app:layout_constraintTop_toBottomOf="@id/action_bar_container"
+        tools:ignore="UselessLeaf">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_logo"/>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/editor_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_main_bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_standart"
+            android:layout_marginBottom="@dimen/margin_standart"
+            android:background="@drawable/bg_main_swiper" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_pencil"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:background="@drawable/bg_main_circle"
+                android:padding="@dimen/margin_component"
+                android:src="@drawable/ic_pencil"
+                app:layout_constraintBottom_toTopOf="@id/tv_pencil"
+                app:layout_constraintEnd_toStartOf="@id/image_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_pencil"
+                style="@style/TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pencil"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/image_pencil"
+                app:layout_constraintStart_toStartOf="@id/image_pencil"
+                app:layout_constraintTop_toBottomOf="@id/image_pencil" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_text"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:background="@drawable/bg_main_circle"
+                android:padding="@dimen/margin_component"
+                android:src="@drawable/ic_text"
+                app:layout_constraintBottom_toTopOf="@id/tv_pencil"
+                app:layout_constraintEnd_toStartOf="@id/image_line"
+                app:layout_constraintStart_toEndOf="@id/image_pencil"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_text"
+                style="@style/TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/image_text"
+                app:layout_constraintStart_toStartOf="@id/image_text"
+                app:layout_constraintTop_toBottomOf="@id/image_text" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_line"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:background="@drawable/bg_main_circle"
+                android:padding="@dimen/margin_component"
+                android:src="@drawable/ic_line"
+                app:layout_constraintBottom_toTopOf="@id/tv_pencil"
+                app:layout_constraintEnd_toEndOf="@id/image_crop"
+                app:layout_constraintStart_toEndOf="@id/image_text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_line"
+                style="@style/TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/image_line"
+                app:layout_constraintStart_toStartOf="@id/image_line"
+                app:layout_constraintTop_toBottomOf="@id/image_line" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_crop"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:background="@drawable/bg_main_circle"
+                android:padding="@dimen/margin_component"
+                android:src="@drawable/ic_crop"
+                app:layout_constraintBottom_toTopOf="@id/tv_pencil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_line"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_crop"
+                style="@style/TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/crop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/image_crop"
+                app:layout_constraintStart_toStartOf="@id/image_crop"
+                app:layout_constraintTop_toBottomOf="@id/image_crop" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_eraser"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:background="@drawable/bg_main_circle"
+                android:padding="@dimen/margin_component"
+                android:src="@drawable/ic_eraser"
+                app:layout_constraintBottom_toTopOf="@id/tv_eraser"
+                app:layout_constraintEnd_toStartOf="@id/image_icons"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_eraser"
+                style="@style/TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eraser"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/image_eraser"
+                app:layout_constraintStart_toStartOf="@id/image_eraser"
+                app:layout_constraintTop_toBottomOf="@id/image_eraser" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_icons"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:background="@drawable/bg_main_circle"
+                android:padding="@dimen/margin_component"
+                android:src="@drawable/ic_arrow"
+                app:layout_constraintBottom_toTopOf="@id/tv_icons"
+                app:layout_constraintEnd_toStartOf="@id/image_circle"
+                app:layout_constraintStart_toEndOf="@id/image_eraser"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_icons"
+                style="@style/TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icons"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/image_icons"
+                app:layout_constraintStart_toStartOf="@id/image_icons"
+                app:layout_constraintTop_toBottomOf="@id/image_icons" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_circle"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:background="@drawable/bg_main_circle"
+                android:padding="@dimen/margin_component"
+                android:src="@drawable/ic_circle"
+                app:layout_constraintBottom_toTopOf="@id/tv_circle"
+                app:layout_constraintEnd_toEndOf="@id/image_square"
+                app:layout_constraintStart_toEndOf="@id/image_icons"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_circle"
+                style="@style/TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/image_circle"
+                app:layout_constraintStart_toStartOf="@id/image_circle"
+                app:layout_constraintTop_toBottomOf="@id/image_circle" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_square"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:background="@drawable/bg_main_circle"
+                android:padding="@dimen/margin_component"
+                android:src="@drawable/ic_square"
+                app:layout_constraintBottom_toTopOf="@id/tv_square"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_circle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_square"
+                style="@style/TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/square"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/image_square"
+                app:layout_constraintStart_toStartOf="@id/image_square"
+                app:layout_constraintTop_toBottomOf="@id/image_square" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

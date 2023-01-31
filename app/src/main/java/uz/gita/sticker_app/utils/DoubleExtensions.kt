@@ -4,3 +4,4 @@ package uz.gita.sticker_app.utils
 fun Double.getFinanceType(): String {
     return "$this".combine("sum")
 }
+

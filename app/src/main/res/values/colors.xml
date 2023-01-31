@@ -10,6 +10,7 @@
     <color name="darkPrimary">#FF0057B2</color>
     <color name="backgroundPrimary">#14007DFF</color>
     <color name="borderPrimary">#80007DFF</color>
+    <color name="mainBottomPrimary">#33FFFFFF</color>
     <!-- Secondary -->
     <color name="contrastTextSecondary">#FFFFFFFF</color>
     <color name="mainSecondary">#FFFF505F</color>
